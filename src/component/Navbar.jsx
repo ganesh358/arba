@@ -8,6 +8,7 @@ import {
   } from '@chakra-ui/react'
 
 import {FaShoppingCart} from "react-icons/fa"
+import { Link } from "react-router-dom";
 
 export default function Navbar({setToken}){
   
@@ -20,7 +21,9 @@ export default function Navbar({setToken}){
 
     return (
         <Flex p='2rem' justifyContent="space-between" alignItems='center'>
+            <Link to='/'>
             <Box h='2rem' w='4rem' color='white' bgColor='#00abc5'>Logo</Box>
+            </Link>
             <Flex  alignItems='center' color='#00abc5' fontSize='2xl' gap='2rem'>
                 <FaShoppingCart/>
             <Menu>
